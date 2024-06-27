@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<style>
+    body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            font-size: 100%;
+            background-image: url("bg1.jpg");
+        }
+  h1{
+    text-align: center;
+  }
+  .container {
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    max-width: 880px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    height: 10%;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    font: bold;
+    
+}
+
+input[type="text"], input[type="password"], select {
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #7a2121;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #ec838d;
+}
+.sidebar {
+            width: 50%;
+            height: 530px;
+            background-image: url("task3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .content {
+            width: 55%;
+            margin-left: 23px;
+        }
+</style>
+</head>
+<body>
+    <br><br>
+<div class="container">
+    <aside class="sidebar"></aside>
+    <div class="content">
+    <h1>FORM</h1>
+  <form action="/submit-form" method="post">
+    <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name"><br><br>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name"><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+                
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                    <option value="1-10">1-10</option>
+                    <option value="11-20">11-20</option>
+                    <option value="21-30">21-30</option>
+                    <option value="31-40">31-40</option>
+                    <option value="41-50">41-50</option>
+                    <option value="51-60">51-60</option>
+                    <option value="61-70">61-70</option>
+                    <option value="71-80">71-80</option>
+                    <option value="81-90">81-90</option>
+                    <option value="91-100">91-100</option>
+                </select><br><br>
+                <center>
+                <button type="submit">Submit</button>
+            </center>
+  </form>
+</div>
+</div>
+</body>
+</html>
